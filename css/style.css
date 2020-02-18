@@ -1,0 +1,512 @@
+@import './bootstrap/css/bootstrap.min.css';
+@import './hover.css';
+
+.bg-black{
+  background-color: black;
+}
+
+body {
+  font-family: 'Snell Roundhand', Helvetica, Arial, sans-serif;
+  width: 100% !important;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Snell Roundhand', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+header.entete {
+  position: relative;
+  background-color: #343a40;
+  background: url("../img/fountain.jpg") no-repeat center;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+header.entete .overlay {
+  position: absolute;
+  background-color: #212529;
+  /*height: 100%; Ombre et luminosité sur l'accueil */
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+header.entete h1 {
+  font-size: 1.5rem;
+}
+.titre{
+  text-align: center;
+  margin-top: 10px;
+  color: black;
+  font-weight: bold;
+  font-size: 5rem;
+}
+
+#img{
+  width: 30%;
+  margin: 0 auto;
+  
+}
+
+
+nav #logo{
+  width:10rem;
+  height:8rem;
+}
+nav ul li{
+  border: .5px solid #ffe3a3;
+  border-radius: .8em;
+}
+nav ul li a {
+  font-size: 1.5em;
+}
+nav ul li a:hover {
+  background-color: #ffe3a3;
+  border-radius: .5em;
+}
+nav ul li a:active{
+  color: black;
+}
+
+.btn{
+  color: #ffe3a3bb;
+}
+
+form .btn {
+  font-size: 16px;
+}
+
+li{
+  margin-left:9px;
+}
+
+a{
+  color:	#ffe3a3;
+}
+
+.showcase .showcase-text {
+  padding: 3rem;
+}
+
+.showcase .showcase-img {
+  min-height: 30rem;
+  background-size: cover;
+}
+
+
+.features-icons {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.features-icons .features-icons-item {
+  max-width: 20rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon {
+  height: 7rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon i {
+  font-size: 4.5rem;
+}
+
+.features-icons .features-icons-item:hover .features-icons-icon i {
+  font-size: 5rem;
+}
+
+.testimonials {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.testimonials .testimonial-item {
+  max-width: 18rem;
+}
+
+.testimonials .testimonial-item img {
+  max-width: 12rem;
+  box-shadow: 0px 5px 5px 0px #adb5bd;
+}
+
+.call-to-action {
+  position: relative;
+  background-color: #343a40;
+  background: url("../img/fountain.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.call-to-action .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+footer.footer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+
+/* Médias queries */
+
+@media (min-width: 768px) {
+  header.entete {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    /* Le menu prend 20vh (20% de le hauteur de la page)
+    - le pourcentage ne marche pas à cause de la position du parent */
+    height: 80vh;
+  }
+  header.entete h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  header.entete {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    /* Le menu prend 20vh (20% de le hauteur de la page)
+    - le pourcentage ne marche pas à cause de la position du parent */
+    height: 100vh;
+  }
+  .showcase .showcase-text {
+    padding: 7rem;
+  }
+}
+@media (max-width: 768px) {
+  header.entete {
+    /* Le menu prend 20vh (20% de le hauteur de la page)
+    - le pourcentage ne marche pas à cause de la position du parent */
+    height: 100vh;
+  }
+}
+.form-row{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer{
+	background-color:black;
+  color:#ffe3a3;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+small{
+	color:#ffe3a3;
+}
+
+footer img{
+	height:10rem;
+	width:10rem;
+}
+footer .change-lang{
+	height:16px;
+	width:16px;
+}
+
+footer form{
+	margin-top:10px;
+}
+
+.fa {
+ 
+  font-size: 2rem;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+
+.fa-facebook {
+  background: #ffe3a3;
+  color: black;
+}
+
+#socialmedia{
+	margin-left: 1rem;
+
+}
+
+#exampleInputEmail1{
+	width:50%;
+	margin: 0 auto;
+}
+
+.btn{
+	background-color: #ffe3a3;
+	color: black;
+	margin-bottom: 10px;
+}
+
+/*page contact/recrutement*/
+.contact{
+	background-color: black;
+	color:white;
+	border-radius: 30px;
+	
+}
+
+.contactform, .recruteform{
+	background-color: black;
+	color:#ffe3a3;
+	padding:30px;
+	border-radius: 10px;
+	
+}
+
+.form-control-file{
+	border-radius: 15px;
+}
+
+/* page mention légal*/
+.mentions-legales, .CGV, .acces {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*page formulaire réservation*/
+.section {
+  position: relative;
+  height: 100vh;
+}
+
+.section .section-center {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#booking{
+  font-family: 'Montserrat', sans-serif;
+  background-image: url('../img/reservation.jpg');
+  background-size: cover;
+  background-position: bottom;
+}
+
+#booking::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.548);
+}
+
+.booking-form {
+  background-color: #fff;
+  padding: 50px 20px;
+  -webkit-box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+.booking-form .form-group {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.booking-form .form-control {
+  background-color: #ebecee;
+  border-radius: 4px;
+  border: none;
+  height: 40px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #3e485c;
+  font-size: 14px;
+}
+
+.booking-form .form-control::-webkit-input-placeholder {
+  color: rgba(11, 13, 17, 0.3);
+}
+
+.booking-form .form-control:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.booking-form .form-control::placeholder {
+  color: rgba(7, 8, 10, 0.3);
+}
+
+.booking-form input[type="date"].form-control:invalid {
+  color: rgba(4, 5, 7, 0.3);
+}
+
+.booking-form select.form-control {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.booking-form select.form-control+.select-arrow {
+  position: absolute;
+  right: 0px;
+  bottom: 4px;
+  width: 32px;
+  line-height: 32px;
+  height: 32px;
+  text-align: center;
+  pointer-events: none;
+  color: rgba(62, 72, 92, 0.3);
+  font-size: 14px;
+}
+
+.booking-form select.form-control+.select-arrow:after {
+  content: '\279C';
+  display: block;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.booking-form .form-label {
+  display: inline-block;
+  color: #3e485c;
+  font-weight: 700;
+  margin-bottom: 6px;
+  margin-left: 7px;
+}
+
+.booking-form .submit-btn {
+  display: inline-block;
+  color: #fff;
+  background-color: black;
+  font-weight: 700;
+  padding: 14px 30px;
+  border-radius: 4px;
+  border: none;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.booking-form .submit-btn:hover,
+.booking-form .submit-btn:focus {
+  opacity: 0.9;
+}
+
+.booking-cta {
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+.booking-cta h1 {
+  font-size: 52px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.booking-cta p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* description chambre */
+
+.container description, p{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+  text-align: center;
+  color:black;
+}
+
+/* modif form chambre */
+
+.formchambre{
+  color: white;
+}
+
+/* annimation titre  */
+.ml9 {
+  position: relative;
+  font-weight: 200;
+  font-size: 4em;
+}
+
+.ml9 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml9 .letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
+}
+.img1{
+  margin-top:200px;
+}
+
+/* descrip index */
+.descript{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+/*modif img presse*/
+.card-img-top{
+  height: 150px;
+  width: auto;
+}
+
+/*page contact/recrutement*/
+
+
+#img-rh{
+  background-image:url('../img/rh.jpg');
+  width:100%;
+  height:40rem;
+  background-repeat: no-repeat;
+  background-size: cover;}
+
+
+ /* page plan du site*/
+.sitemap{
+  background-color: black;
+}
+
+.sitemap li{
+  color:#ffe3a3;
+}
+
+  /*Pas plus de 375 en largeur. ex: Iphone 6/7/8*/
+  @media screen and (min-width: 375px) and (max-width: 812px) {
+    
+    body {
+      margin: 0;
+    }
+
+  }
